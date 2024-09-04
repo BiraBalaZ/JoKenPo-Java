@@ -18,55 +18,46 @@ public class Main {
         System.out.println("[1] Pedra\n[2] Papel\n[3] Tesoura\n>>> ");
         choice = scanner.nextInt();
 
-        // Verificando a esolha do jogador
-        if (choice == 1) {
-            System.out.println("Você escolheu Pedra");
-        }
-        else if (choice == 2) {
-            System.out.println("Você escolheu Papel");
-        }
-        else if (choice == 3) {
-            System.out.println("Você escolheu Tesoura");
-        }
-        else {
-            System.out.println("Opção inválida");
-        }
-
-        // Verificando a esolha da I.A.
-        if (iaChoice == 1) {
-            System.out.println("A I.A. escolheu Pedra");
-        }
-        else if (iaChoice == 2) {
-            System.out.println("A I.A. escolheu Papel");
-        }
-        else if (iaChoice == 3) {
-            System.out.println("A I.A. escolheu Tesoura");
-        }
-
-        System.out.println();
-
         // Verificando vencedor
         if (choice == 1 && iaChoice == 2) {
+            System.out.println("Você escolheu Pedra");
+            System.out.println("A I.A. escolheu Papel\n");
+
             System.out.println("A I.A. embrulhou você!");
             System.out.println("Você perdeu :(");
         }
         else if (choice == 2 && iaChoice == 1) {
+            System.out.println("Você escolheu Papel");
+            System.out.println("A I.A. escolheu Pedra\n");
+
             System.out.println("Você embrulhou a I.A. !");
             System.out.println("Você VENCEU! :D");
         }
         else if (choice == 1 && iaChoice == 3) {
+            System.out.println("Você escolheu Pedra");
+            System.out.println("A I.A. escolheu Tesoura\n");
+
             System.out.println("Você ESMAGOU a I.A. !");
             System.out.println("Você VENCEU! :D");
         }
         else if (choice == 3 && iaChoice == 1) {
+            System.out.println("Você escolheu Tesoura");
+            System.out.println("A I.A. escolheu Pedra\n");
+
             System.out.println("A I.A. ESMAGOU a você!");
             System.out.println("Você perdeu :(");
         }
         else if (choice == 2 && iaChoice == 3) {
+            System.out.println("Você escolheu Papel");
+            System.out.println("A I.A. escolheu Tesoura\n");
+
             System.out.println("A I.A. picotou você!");
             System.out.println("Você perdeu :(");
         }
         else if (choice == 3 && iaChoice == 2) {
+            System.out.println("Você escolheu Pedra");
+            System.out.println("A I.A. escolheu Papel\n");
+
             System.out.println("Você picotou a I.A. !");
             System.out.println("Você VENCEU! :D");
         }
